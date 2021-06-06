@@ -34,12 +34,13 @@ GET http://localhost:8080/retry/fail/4d458fd0-3c80-46a7-b2d5-23393ac25dff
 GET http://localhost:8080/retry/success/4d458fd0-3c80-46a7-b2d5-23393ac25dff
 
 ###
-GET http://localhost:8080/order/efe05503-51df-4a2f-aea6-bfc3e1bcd11f
+GET http://localhost:8080/order/15070217-c6d0-11eb-ab72-e21d4b4d3494
+
+###
+GET http://localhost:8080/order/transitions/1fe24899-c6d1-11eb-9053-e21d4b4d3494
 
 ###
 # for ((i=1;i<=2000;i++)); do curl -s -X POST --location "http://localhost:8080/order/success" -H "Content-Type: application/json" -d "{\"customer\": \"ABC Racing\", \"articleNumber\": 2421, \"count\": 1}" > /dev/null; done
 
 
-###
-GET http://localhost:8080/order/success
-Authorization: Bearer dGVzdDp0ZXN0
+
